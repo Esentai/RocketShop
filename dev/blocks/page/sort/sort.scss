@@ -1,0 +1,101 @@
+.sort{
+  display: grid;
+  grid-template-columns:repeat(3, 283px);
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    &_flex{
+      display: inline-block;
+    }
+    &_list{
+      text-align: right;
+    }
+    &_right{
+      grid-column: 2 / span 2;
+      grid-row: 1;
+      text-align: right;
+    }
+    &_left{
+      grid-column: 1 / span 1;
+      grid-row: 1;
+      padding-top: 9px;
+    }
+    &_button{
+      width: 137px;
+      height: 40px;
+      margin-right: -5px;
+      background-color:#f1f3f5;
+
+      &:hover{
+        color: black;
+        background-color: rgba(230,230,230,.7);
+      }
+      &_active{
+        background-color: #e00985;
+        color: white;
+        cursor: default;
+        &:hover{
+          background-color: #e00985;
+          color: white;
+          cursor: default;
+        }
+      }
+      &_text{
+        width: 67px;
+        height: 16px;
+        font-weight: 300;
+        font-family: RobotoRegular;
+        font-size: 14px;
+      }
+    }
+    &_text{
+      width: 251px;
+      height: 23px;
+      font-family: RobotoRegular;
+      font-size: 17px;
+      color: #000000;
+    }
+  }
+  &_off{
+    opacity: 0.4;
+    filter: grayscale(100%);
+    &_price{
+      background-color: transparent;
+      opacity: 0.4;
+      filter: grayscale(100%);
+    }
+  }
+  &__item{
+    &_img{
+      &_birka{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top:120px;
+      }
+      &_span{
+        position: absolute;
+        &_text{
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 4.5px;
+          color: #000000;
+          font-size: 13px;
+          font-family: RobotoRegular;
+        }
+      }
+    }
+    &_off{
+      &_img{
+        position: relative;
+        width: 132.7px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+

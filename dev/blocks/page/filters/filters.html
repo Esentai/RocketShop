@@ -1,0 +1,244 @@
+<section class="filters">
+    <button class="button button_white button_small button_filtres">Сбросить все фильтры</button>
+    <div class="filters__brand">
+        <h5 class="filters__title">Бренд</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Biotherm <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Clinique <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Collistar <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Estee lauder <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Lancôme <span class="checkbox__label_gray">43</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <a href="#" class="filters__show-all">Показать все</a>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">От <span class="filters__price price" id="demo"></span> до <span class="filters__price price" id="demo2"></span> ₸</h5>
+        <div class="filters__slider">
+            <div class="range__line" id="range__line">
+            </div>
+            <input type="range" min="100" max="56790" value="100" class="range range_min" id="range_min" oninput="filterFunction()" step="100">
+            <input type="range" min="100" max="56790" value="10000" class="range range_max" id="range_max" oninput="filterFunction()" step="100">
+            <div class="filters__below-prices"><span class="filters__below-prices-left">100 ₸</span><span class="filters__below-prices-right">56 790 ₸</span></div>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Текстура</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Крем <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Масло <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Вода <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Маска <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Тип кожи</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox" checked>Все типы <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Нормальная <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Сухая <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Комбинированная <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Возраст</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox" checked>Для любого возраста <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">с 25 лет <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">с 30 лет <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">с 35 лет <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">с 45 лет <span class="checkbox__label_gray">43</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">SPF <div class="filters__info">?<span class="filters__tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium odio, quod sapiente</span></div> </h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox" checked>Низкий spf&lt;15 <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Средний 15&lt;spf&lt;30 <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Высокий 30&lt;spf&lt;50 <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Очень высокий 50&lt;spf <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Особенности</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Новинка <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Эксклюзив <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Лимитированный выпуск <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Только online <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Бестселлер <span class="checkbox__label_gray">43</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Лучшая цена <span class="checkbox__label_gray">35</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Страна</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Германия <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Италия <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">США <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Франция <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Наличие на складе</h5>
+        <div class="radio">
+            <label class="radio__label">
+                <input type="radio" name="showProducts" value="all" checked>Показывать все товары
+                <span class="radio__radiomark"></span>
+            </label>
+        </div>
+        <div class="radio">
+            <label class="radio__label">
+                <input type="radio" name="showProducts" value="available">Только те, что в наличии
+                <span class="radio__radiomark"></span>
+            </label>
+        </div>
+    </div>
+</section>

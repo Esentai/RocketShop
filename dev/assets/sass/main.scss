@@ -1,0 +1,71 @@
+@import 'settings';
+@import 'vars.scss';
+@import 'normalize.scss';
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+// import styles of blocks
+//common
+@import "../../blocks/common/button/button";
+@import "../../blocks/common/pagination/pagination";
+@import "../../blocks/common/button/button";
+@import "../../blocks/common/checkbox/checkbox.scss";
+@import "../../blocks/common/grid/grid";
+@import "../../blocks/common/input/input";
+@import "../../blocks/common/radio-button/radio-button";
+@import "../../blocks/common/range/range";
+@import '../../blocks/common/breadcrumbs/breadcrumbs.scss';
+@import '../../blocks/common/product-list/product-list.scss';
+@import '../../blocks/common/product-amount/product-amount.scss';
+@import '../../blocks/common/divider/divider.scss';
+@import '../../blocks/common/aside/aside.scss';
+@import "../../blocks/common/progress/progress.scss";
+@import "../../blocks/common/item/item.scss";
+
+
+//page
+@import "../../blocks/page/slider/slider";
+@import "../../blocks/page/selection/selection";
+@import "../../blocks/page/blog/blog";
+@import "../../blocks/page/popular/popular.scss";
+@import "../../blocks/page/sales/sales.scss";
+@import "../../blocks/page/new/new.scss";
+@import "../../blocks/page/subscribe/subscribe.scss";
+@import "../../blocks/page/sort/sort.scss";
+@import "../../blocks/page/brands/brands.scss";
+@import "../../blocks/page/alsobuy/alsobuy.scss";
+@import "../../blocks/page/blog_article/blog_article.scss";
+@import "../../blocks/page/cart/cart.scss";
+@import "../../blocks/page/basket/basket.scss";
+@import "../../blocks/page/samples/samples.scss";
+@import "../../blocks/page/choice/choice.scss";
+
+@import "../../blocks/page/card/card.scss";
+
+@import "../../blocks/page/popular/popular.scss";
+@import "../../blocks/page/delivery_and_payment/delivery_and_payment";
+@import "../../blocks/page/comments/comment.scss";
+@import "../../blocks/page/cancel-order/cancel-order.scss";
+@import "../../blocks/page/heading/heading.scss";
+
+@import "../../blocks/page/header/header.scss";
+@import "../../blocks/page/footer/footer.scss";
+@import "../../blocks/page/filters/filters.scss";
+
+.filters__index{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 64px;
+  justify-content: space-between;
+
+}
+
+// media-queries
+@import "media";
+
+

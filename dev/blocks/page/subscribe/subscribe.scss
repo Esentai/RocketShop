@@ -1,0 +1,46 @@
+.subscribe__main{
+  position: relative;
+  background: url("../../../assets/img/subscribe/subscribe_background_image.png") no-repeat;
+  height: 200px;
+  background-size: contain;
+  margin-top: 80px;
+  margin-bottom: 46px;
+}
+
+.subscribe__search{
+  display: flex;
+}
+
+.subscribe_title{
+  font-family: RobotoRegular;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 7px;
+  margin-top: 0px;
+  font-weight: normal;
+}
+
+.subscribe_input_div{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55px;
+  margin:0 20%;
+}
+
+.subscribe_input{
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #c8c8c8;
+}
+
+::-webkit-input-placeholder {
+  color: #c8c8c8;
+  font-family: RobotoLight
+}
+
+.subscribe__input{
+  width: 589px;
+  margin-right: 19px;
+}
+

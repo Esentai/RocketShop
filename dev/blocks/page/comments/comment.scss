@@ -1,0 +1,157 @@
+.comments{
+  margin-top: 72.5px;
+  margin-bottom: 69.5px;
+}
+
+.comments__heading {
+  font-family: RobotoRegular;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.comments__content {
+  display: flex;
+}
+
+.comments__form {
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.comments__button {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+}
+
+.comments-formimg {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.comments-forminput {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comments__textarea {
+  padding-left: 14px;
+  padding-top: 11px;
+  width: 767px;
+  height: 80px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #dcdcdc;
+  resize: none;
+  font-family: RobotoRegular;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.comments__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-right: 23px;
+}
+
+.comments__users {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__user-name {
+  font-family: RobotoMedium;
+  width: 160px;
+  height: 21px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.comments__user-name:hover {
+  color: #e00985;
+}
+
+.comments__user-comment {
+  font-family: RobotoRegular;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.comments__reply {
+  font-family: RobotoMedium;
+  width: 62px;
+  height: 19px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.comments__reply:hover {
+  color: #e00985;
+}
+
+.comments__answer {
+  display: flex;
+  margin-top: 23px;
+  margin-bottom: 33px;
+  padding-left: 102px;
+}
+
+@media (max-width: 992px)  {
+  .comments-form__textarea {
+    width: 400px;
+  }
+  .comments-forminput {
+    width: 400px;
+  }
+}
+
+@media (max-width: 778px)  {
+  .comments-form__textarea {
+    width:275px;
+  }
+
+  .comments-forminput {
+    width: 275px;
+  }
+
+  .comments-user__img {
+    display: none;
+  }
+}

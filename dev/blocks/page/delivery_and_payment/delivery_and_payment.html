@@ -1,0 +1,168 @@
+<div class="page progress page_full">
+    <div class="page__content">
+        <div class="progress__steps">
+            <span class="progress__steps_text progress__steps_text_active">1 Товары в корзине</span>
+            <hr class="progress__steps_line progress__steps_line_active">
+            <span class="progress__steps_text progress__steps_text_active">2 Доставка и оплата</span>
+            <hr class="progress__steps_line ">
+            <span class="progress__steps_text ">3 Завершение заказа</span>
+        </div>
+    </div>
+</div>
+<div class="page">
+    <section class="delivery-and-payment page-content">
+        <div class="grid">
+            <div class="col10">
+                <div class="delivery-and-payment__block">
+                    <span class="delivery-and-payment__text">Получатель</span>
+                    <span class="delivery-and-payment__text delivery-and-payment__text_descr">Уже заказывали у нас? <a href="#!">Войдите в аккаунт</a>, чтобы не вводить данные снова</span>
+                    <div class="delivery-and-payment__form">
+                        <div class="">
+                            <div class="form-control">
+                                <div class="input">
+                                    <label for="name" class="input__label">Имя</label>
+                                    <input id="name" type="text" class="input__main input__main_big input__main_text" placeholder="Введите свое имя">
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <div class="input">
+                                    <label class="input__label">Город</label>
+                                    <div>
+                                        <label class="delivery-and-payment__select-label">
+                                            <select class="delivery-and-payment__select">
+                                                <option value="almaty">Алматы</option>
+                                                <option value="astana">Астана</option>
+                                                <option value="atyrau">Атырау</option>
+                                                <option value="shymkent">Шымкент</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-control">
+                                <div class="input">
+                                    <label for="email" class="input__label">Почта</label>
+                                    <span class="input__help input__label input__label_gray">Необязательно</span>
+                                    <input id="email" type="text" class="input__main input__main_big input__main_text" placeholder="Укажите электронную почту">
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <div class="input">
+                                    <label for="phone" class="input__label">Телефон</label>
+                                    <input id="phone" type="text" class="phone input__main input__main_big input__main_text" placeholder="+7 xxx xxx-xx-xx">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-and-payment__block">
+                    <span class="delivery-and-payment__text">Выберите способ доставки</span>
+                    <div class="delivery-and-payment__card">
+                        <div class="delivery-and-payment__card delivery-and-payment__form_left" >
+                            <div class="delivery-and-payment__method" onclick="selectDelivery(1)">
+                                <div class="delivery-and-payment__ico delivery-and-payment__ico_delivery"><i class="rocket-delivery"></i></div>
+                                <div class="delivery-and-payment__block delivery-and-payment__block_method">
+                                    <span class="delivery-and-payment__text delivery-and-payment__text_title">Доставка курьером</span>
+                                    <span class="delivery-and-payment__text delivery-and-payment__text_method">Завтра или послезавтра</span>
+                                    <span class="delivery-and-payment__text delivery-and-payment__text_price">+850 ₸</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery-and-payment__card delivery-and-payment__form_right" >
+                            <div class="delivery-and-payment__method delivery-and-payment__method_pickup" onclick="selectDelivery(2)">
+                                <div class="delivery-and-payment__ico delivery-and-payment__ico_pickup"><i class="rocket-pickup"></i></div>
+                                <div class="delivery-and-payment__block delivery-and-payment__block_method">
+                                    <span class="delivery-and-payment__text delivery-and-payment__text_title">Самовывоз</span>
+                                    <span class="delivery-and-payment__text delivery-and-payment__text_method">Пн–Пт с 09:00 до 21:00. г. Алматы, ул. Желтоксан 76/103, уг. ул. Жибек Жолы. Наличными или картой Kaspi Red</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-and-payment__block delivery-and-payment__block_method">
+                        <span class="delivery-and-payment__text delivery-and-payment__text_method">Адрес доставки</span>
+                        <div class="delivery-and-payment__form delivery-and-payment__form_three input">
+                            <input type="text" class="input__main input__main_big delivery-and-payment__input" placeholder="Введите название улицы">
+                            <input type="text" class="input__main input__main_big delivery-and-payment__input" placeholder="№ дома">
+                            <input type="text" class="input__main input__main_big delivery-and-payment__input" placeholder="№ квартиры/офиса">
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-and-payment__block">
+                    <span class="delivery-and-payment__text">Выберите способ оплаты</span>
+                    <div class="delivery-and-payment__card">
+                        <div class="delivery-and-payment__method delivery-and-payment__method_payment" onclick="selectPayment(1)">
+                            <div class="delivery-and-payment__i delivery-and-payment__ico delivery-and-payment__ico_card">
+                                <i class="rocket-card"></i>
+                            </div>
+                            <div class="delivery-and-payment__block delivery-and-payment__block_method">
+                                <span class="delivery-and-payment__text delivery-and-payment__text_payment">Банковская карта</span>
+                                <span class="delivery-and-payment__text delivery-and-payment__text_method">Картой любого банка</span>
+                            </div>
+                        </div>
+                        <div class="delivery-and-payment__method delivery-and-payment__method_payment" onclick="selectPayment(2)">
+                            <div class="delivery-and-payment__ico delivery-and-payment__ico_card">
+                                <img class="delivery-and-payment__ico delivery-and-payment__ico_png" src="../../assets/img/delivery_and_payment/dp_kaspi.png" alt="">
+                            </div>
+                            <div class="delivery-and-payment__block delivery-and-payment__block_method">
+                                <span class="delivery-and-payment__text delivery-and-payment__text_payment">Через Kaspi.kz</span>
+                            </div>
+                        </div>
+                        <div class="delivery-and-payment__method delivery-and-payment__method_payment" onclick="selectPayment(3)">
+                            <div class="delivery-and-payment__ico delivery-and-payment__ico_card">
+                                <img class="delivery-and-payment__ico delivery-and-payment__ico_png" src="../../assets/img/delivery_and_payment/dp_qiwi-terminal.png" alt="">
+                            </div>
+                            <div class="delivery-and-payment__block delivery-and-payment__block_method" >
+                                <span class="delivery-and-payment__text delivery-and-payment__text_payment">Через Qiwi-терминал</span>
+                                <span class="delivery-and-payment__text delivery-and-payment__text_method">Через терминал</span>
+                            </div>
+                        </div>
+                        <div class="delivery-and-payment__method delivery-and-payment__method_payment" onclick="selectPayment(4)">
+                            <div class="delivery-and-payment__ico delivery-and-payment__ico_card">
+                                <i class="rocket-cash"></i>
+                            </div>
+                            <div class="delivery-and-payment__block delivery-and-payment__block_method">
+                                <span class="delivery-and-payment__text delivery-and-payment__text_payment">Наличными курьеру</span>
+                                <span class="delivery-and-payment__text delivery-and-payment__text_method">При получении заказа</span>
+                            </div>
+                        </div>
+                        <div class="delivery-and-payment__method delivery-and-payment__method_payment" onclick="selectPayment(5)">
+                            <div class="delivery-and-payment__ico delivery-and-payment__ico_card">
+                                <img class="delivery-and-payment__ico delivery-and-payment__ico_png" src="../../assets/img/delivery_and_payment/dp_qiwi.png" alt="">
+                            </div>
+                            <div class="delivery-and-payment__block delivery-and-payment__block_method">
+                                <span class="delivery-and-payment__text delivery-and-payment__text_payment">Через Qiwi-кошелек</span>
+                                <span class="delivery-and-payment__text delivery-and-payment__text_method">Через интернет с карты</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside">
+            <span class="aside__title">Итог заказа</span>
+            <div class="aside__promo">
+                <div class="form-control">
+                    <div class="input">
+                        <label for="promo" class="input__label">Есть промо-код?</label>
+                        <input id="promo" type="text" class="input__main input__main_text" placeholder="Введите промо-код">
+                    </div>
+                </div>
+                <div class="bill__items">
+                    <span class="bill__items_text">Товары</span>
+                    <span class="bill__items_value">34 560 ₸</span>
+                </div>
+                <div class="bill__delivery">
+                    <span class="bill__delivery_text">Доставка</span>
+                    <span class="bill__delivery_value">850 ₸</span>
+                </div>
+                <div class="aside__total">
+                    <span class="aside__total_text">Итоговая сумма</span>
+                    <span class="aside__total_value">56 600 ₸</span>
+                </div>
+                <button class="button button_pay">Оплатить</button>
+            </div>
+        </div>
+    </section>
+</div>

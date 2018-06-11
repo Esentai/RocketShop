@@ -1,0 +1,143 @@
+<div class="page">
+	<section class="card page-content">
+		<div class="card-images">
+			<div class="card-images__slider">
+				<div class="card__discount">
+					<span class="card__discount-text" >50%</span>
+				</div>
+				<img class="card-images__image" src="../../assets/img/card/card_1.png" alt="">
+				<video class="card-images__image " src="../../assets/media/card/card_1.mp4" autoplay></video>
+			</div>
+			<div class="card-images__list">
+				<img src="../../assets/img/card/card_1.png" alt="Image 1" onclick="currentPic(1)" class="card-images__image card-images__image_min">
+				<img src="../../assets/img/card/card_2.png" alt="Image 2" onclick="currentPic(2)" class="card-images__image card-images__image_min">
+				<img src="../../assets/img/card/card_3.png" alt="Image 3" onclick="currentPic(3)" class="card-images__image card-images__image_min">
+				<div onclick="currentPic(4)" class="card-images__image card-images__image_min card-images__image_video">
+					<div class="card-images__button"><i class="card-button rocket-play-button"></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="card-info">
+			<div class="card-info__title">
+				<span class="card-info__title-text card-info__title-text_producer">Clinique</span>
+				<div class="card-info__title card-info__title_top">
+					<span class="card-info__title-text">Помада для губ Pop Lip Colour + Primer</span>
+					<div class="card__discount card__discount_birka">
+						<span class="card__discount-text card__discount-text_birka">Бестселлер</span>
+					</div>
+				</div>
+				<div class="card-info__data">
+					<div class="card-info__raiting">
+							<fieldset class="raiting__stars">
+								<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+								<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+								<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+								<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+								<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+							</fieldset>
+						<span class="card-info__raiting-score">4.0 (453)</span>
+					</div>
+					<div class="card-info__articule">
+						<span class="card-info__articule-text">Артикул — </span>
+						<span class="card-info__articule-value">0207145487</span>
+					</div>
+				</div>
+			</div>
+			<div class="card-short-info">
+				<hr />
+				<div class="card-short-info__country">
+					<span class="card-short-info__text">Страна произодителя — </span>
+					<span class="card-short-info__text card-short-info__country-value">США</span>
+				</div>
+				<div class="card-short-info__volume">
+					<span class="card-short-info__text">Объем — </span>
+					<span class="card-short-info__text card-short-info__volume-value">3,9 г</span>
+				</div>
+				<div class="card-short-info__color">
+					<span class="card-short-info__text">Цвет — </span>
+					<span class="card-short-info__text card-short-info__color-value">Passion Pop</span>
+				</div>
+				<div class="card-short-info__color-select">
+					<img src="../../assets/img/card/card_color_1.png" onclick="currentColor(1)" data-color="#ff7c82" alt="Froly" title="Froly" class="card-short-info__colors">
+					<img src="../../assets/img/card/card_color_2.png" onclick="currentColor(2)" data-color="#e78883" alt="Light Coral" title="Light Coral" class="card-short-info__colors">
+					<img src="../../assets/img/card/card_color_3.png" onclick="currentColor(3)" data-color="#e07968" alt="Japonica" title="Japonica" class="card-short-info__colors">
+					<img src="../../assets/img/card/card_color_4.png" onclick="currentColor(4)" data-color="#e17775" alt="Tango Pink" title="Tango Pink" class="card-short-info__colors">
+					<img src="../../assets/img/card/card_color_5.png" onclick="currentColor(5)" data-color="#d24553" alt="Brick Red" title="Brick Red"  class="card-short-info__colors">
+					<img src="../../assets/img/card/card_color_6.png" onclick="currentColor(6)" data-color="#cd2017" alt="Passion Pop" title="Passion Pop" class="card-short-info__colors">
+					<img src="../../assets/img/card/card_color_7.png" onclick="currentColor(7)" data-color="#a41520" alt="Ruby Red" title="Ruby Red" class="card-short-info__colors">
+				</div>
+				<div class="card-short-info__amount">
+					<div class="product-amount product-amount__card">
+						<div class="product-amount__decrease product-amount__decrease_card-size" onclick="minus()">–</div>
+						<div class="product-amount__value product-amount__value_card-size"><span class="count__value">2 </span> шт.</div>
+						<div class="product-amount__increase product-amount__increase_card-size" onclick="add()">+</div>
+					</div>
+				<div class="card-short-info__price">
+					<button class="button  button_big button_right-ico">5 850 ₸<div class="button__line button__line_long"></div>
+						<i class="rocket-shop-bag_plus button__ico_right-ico button__ico_white button__ico_big"></i>
+					</button>
+					<s style="color:#e00985"><div class="card-short-info__cost-old">11 700 ₸
+					</div></s>
+				</div></div>
+				<div class="card-short-info__buttons">
+					<div class="card-short-info__button">
+						<i class="rocket-heart" aria-hidden="true" ></i>
+						<span class="card-short-info__buttons-text ">В избранное</span>
+					</div>
+					<div class="card-short-info__button card-short-info__button_want">
+						<i class="rocket-gift"></i>
+						<span class="card-short-info__buttons-text ">Хочу получить в подарок от друга</span>
+					</div>
+				</div>
+				<hr />
+			</div>
+			<div class="card-info__review">
+				<div class="card-info__buttons">
+					<span class="butt card-info__button" onclick="currentBlock(1)">Описание</span>
+					<span class="butt card-info__button" onclick="currentBlock(2)">Характеристики</span>
+					<div class="butt card-info__button" onclick="currentBlock(3)"><span class="button__reviews_text">Отзывы </span>(<span class="button__reviews_amount">23</span>)</div>
+				</div>
+				<div class="info__blocks">
+					<div class="bupp card-info__block">
+						<p class="card-info__text">
+							Представляем новую Clinique Pop Lip Colour + Primer — насыщенный оттенок помады + разглаживающий праймер в одной формуле.
+							Привлекательные, игривые цвета в cочетании с праймером, который разглаживает губы, делает их выразительнее и питает на протяжении всего дня. Оттенок со стойким бархатистым покрытием сохраняется весь день, не тускнея и не бледнея. НОВАЯ Clinique Pop Lip Colour + Primer содержит масла
+						</p>
+					</div>
+					<div class="bupp card-info__block">
+						<p class="card-info__text">
+							Страна: Smth <br>
+							Год: 2018 <br>
+							Lorem: Ipsum
+						</p>
+					</div>
+					<div class="bupp card-info__block">
+						<p class="card-info__text">
+							<b>Lorem</b> <br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							A accusantium aliquam architecto dolorum, eveniet laudantium maiores officia perferendis rem similique?
+							<hr />
+						</p>
+						<p class="card-info__text">
+							<b>Lorem</b> <br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							A accusantium aliquam architecto dolorum, eveniet laudantium maiores officia perferendis rem similique?
+						<hr />
+						</p>
+						<p class="card-info__text">
+							<b>Lorem</b> <br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							A accusantium aliquam architecto dolorum, eveniet laudantium maiores officia perferendis rem similique?
+						<hr />
+						</p>
+						<p class="card-info__text">
+							<b>Lorem</b> <br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							A accusantium aliquam architecto dolorum, eveniet laudantium maiores officia perferendis rem similique?
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

@@ -1,0 +1,39 @@
+.brands__content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.brands__img-container {
+  display: flex;
+  align-items: center;
+}
+
+.brands__jimmy-img {
+  width: 147px;
+  height: 110px;
+}
+
+.brands__lancome-img {
+  width: 145px;
+  height: 35px;
+}
+
+.brands__mont-img {
+  width: 110px;
+  height: 83px;
+}
+
+.brands__estee-img {
+  width: 101px;
+  height: 70px;
+}
+
+.brands__dkny-img {
+  width: 140px;
+  height: 48px;
+}
+
+.brands__kenzo-img {
+  width: 152px;
+  height: 51px;
+}

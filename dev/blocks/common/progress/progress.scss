@@ -1,0 +1,41 @@
+.progress{
+  background-color: #f3f5f7;
+  width: 100%;
+  text-align: center;
+}
+
+.progress__steps{
+  height: 64px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.progress__steps_text{
+  margin: auto 0;
+  padding: 0 25px;
+  font-family: RobotoRegular;
+  font-size: 14px;
+  line-height: 1;
+  text-align: left;
+  color: #97a2ab;
+}
+
+.progress__steps_text_active{
+  color: #000000;
+}
+
+.progress__steps_line{
+  width: 26.5%;
+  height: 1px;
+  margin: 30px auto;
+  color:  #d2d6d9;
+  border: none;
+  background-color:  #d2d6d9;
+}
+
+.progress__steps_line_active{
+  color: #000000;
+  border: none;
+  background-color: #000000;
+}
+

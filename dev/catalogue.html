@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    @@include('blocks/page/header/header.html')
+    @@include('blocks/page/heading/heading.html')
+    <div class="page">
+       <div class="page__content">
+            <div class="filters__index">
+                @@include('blocks/page/filters/filters.html')
+                @@include('blocks/page/sort/sort.html')
+            </div>
+           @@include('blocks/page/pagination/pagin.html')
+       </div>
+    </div>
+    @@include("blocks/page/blog/blog.html")
+    @@include("blocks/page/brands/brands.html")
+    @@include("blocks/page/subscribe/sub.html")
+    @@include("blocks/page/footer/footer.html")
+    <script src="assets/js/filters/filters.js"></script>
+    <script src="assets/js/sort/sort.js"></script>
+    <script src="assets/js/price/price.js"></script>
+    <script src="assets/js/header/header.js"></script>
+</body>
+</html>

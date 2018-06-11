@@ -1,0 +1,104 @@
+.footer{
+  font-family: RobotoRegular;
+  grid-column: 1/ -1;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e6e6e6;
+
+  &__menu{
+    margin: 0;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 24px;
+    list-style-type: none;
+  }
+
+  &__list {
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 10px;
+    font-family: RobotoRegular;
+  }
+
+  &__menu-list{
+    list-style-type: none;
+    margin-bottom: 13px;
+  }
+
+  &__mail{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  &__link{
+    cursor: pointer;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    &:hover {
+      color:$deep-pink;
+      border-bottom: 1px solid rgba(225, 8, 135, 0.2);
+    }
+    &_inline {
+      margin-left: 25px;
+    }
+  }
+
+  &__call-btn {
+    margin-top: 5px;
+  }
+
+  &__social{
+    margin-right: 5px;
+    width: 44px;
+    height: 44px;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+    border: solid 1px #dcdcdc;
+    display: inline-flex;
+    &:hover{
+      background-color: #e10887;
+      color: #ffffff;
+    }
+  }
+
+  &__icon{
+    padding-top: 5px;
+    font-size: 1.3em;
+    line-height: 34px;
+    margin:0 auto;
+    &:hover {
+      color:#ffffff;
+    }
+  }
+
+  &__line{
+    height: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &__logo{
+    position: relative;
+  }
+
+  &__logo_year{
+    border: 1px solid black;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-size: 9px;
+    position: absolute;
+    top: 0;
+    left: 130px;
+  }
+
+  &__bottom {
+    font-size: 12px;
+  }
+}

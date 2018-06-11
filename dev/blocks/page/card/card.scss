@@ -1,0 +1,429 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  border: none;
+  justify-content: center;
+  padding-top: 19px;
+
+  @media screen and (max-width: 1100px){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card-images{
+  position: relative;
+  margin-right: 39px;
+  display: flex;
+  flex-direction: column;
+  width: 488px;
+
+  @media screen and (max-width: 1100px){
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
+.card-images__slider{
+  padding: 19px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1100px){
+    width: 40%;
+  }
+}
+
+.card-images__image{
+  width: 100%;
+
+  &_min{
+    width: 79px;
+    height: 79px;
+    margin-right: 16px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover{
+      border: 1px solid gray;
+    }
+
+    @media screen and (max-width: 808px){
+      width: 49px;
+      height: 49px;
+    }
+  }
+  &_active{
+    border: 1px solid $medium-violet-red;
+
+    &:hover{
+      border: 1px solid $medium-violet-red;
+    }
+  }
+}
+
+.card-images__list{
+  display: flex;
+  justify-content: center;
+}
+
+.card-images__image_video{
+  background: url("../img/card/card_4.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-images__button {
+  width: 44px;
+  height: 44px;
+  background: #000;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $medium-violet-red;
+  @media screen and (max-width: 808px) {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+}
+
+.rocket-play-button{
+  margin-right: -4px;
+}
+.count__value{
+  margin-right: 2px;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  @media screen and (max-width: 1100px){
+    width: 90%;
+  }
+}
+
+.card-info__title{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.card-info__title_top{
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
+.card-info__title-text{
+  font-family: RobotoRegular;
+  font-size: 24px;
+  line-height: 1.3;
+  margin-right: 20px;
+}
+
+.card-info__title-text_producer{
+  letter-spacing: 2px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(#000000,0.2);
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.card-info__data{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  @media screen and (max-width: 705px){
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.card-info__raiting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-info__raiting-score{
+  font-family: RobotoRegular;
+  font-size: 17px;
+  line-height: 17px;
+  margin-right: 24px;
+}
+
+.card-info__articule{
+  font-family: RobotoRegular;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
+.card-short-info__text{
+  font-family: RobotoRegular;
+  font-size: 17px;
+  color: black;
+}
+
+.card-short-info__country{
+  margin-top: 8px;
+}
+
+.card-short-info__color{
+  margin-bottom: 10px;
+}
+
+.card-short-info__color-value{
+  color: #c31a06;
+}
+
+.card-short-info__color-select{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 34px;
+  @media screen and (max-width: 705px){
+   flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+}
+
+.card-short-info__colors{
+  border: 1px solid $whisper;
+  padding: 4px;
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover{
+    border: 1px solid gray;
+  }
+
+  &_active{
+    border: 1px solid $medium-violet-red;
+
+    &:hover{
+      border: 1px solid $medium-violet-red;
+    }
+  }
+  @media screen and (max-width: 705px){
+
+    margin-bottom: 10px;
+  }
+}
+
+.card-short-info__amount{
+  display: flex;
+  flex-direction: row;
+  align-items: center ;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 705px){
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.card-short-info__price{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card-short-info__cost-old{
+  font-family: RobotoRegular;
+  font-size: 28px;
+  color: $light-gray;
+  margin-left: 20px;
+  @media screen and (max-width: 1156px){
+    font-size: 21px;
+  }
+}
+
+.card-short-info__buttons{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 33px;
+}
+
+.card-info__buttons{
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  margin-bottom: 13px;
+}
+
+.card-short-info__buttons_like{
+  @media screen and (max-width: 705px){
+    flex-direction: column;
+  }
+}
+
+.card-short-info__button{
+  margin-right: 32px;
+  cursor: pointer;
+
+  &:hover{
+    color: $medium-violet-red;
+  }
+
+  &_want{
+    cursor: pointer;
+    color: #000;
+    margin-right: 0;
+  }
+}
+
+.card-short-info__buttons-text{
+  margin-left: 7px;
+  border-bottom: 1px dashed rgba(#000, 0.2);
+  line-height: 1;
+}
+
+.card-info__button{
+  font-family: RobotoRegular;
+  font-size: 24px;
+  color: rgba(#000, 0.3);
+  margin-right: 28px;
+  border-bottom: 1px dashed rgba(#000, 0.2);
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover{
+    color: gray;
+    border-color: gray;
+  }
+
+  &_active{
+    color: black;
+    border-bottom: none;
+
+    &:hover{
+      cursor: default;
+      color: black;
+    }
+  }
+
+  @media screen and (max-width: 760px){
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 680px){
+    margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.card-info__block{
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 828px){
+    padding-right: 0;
+  }
+}
+
+.card__discount{
+  position: absolute;
+  top:0;
+  left: 0;
+  background: url("../../assets/img/card/card_birka_xl.svg") 0 0 no-repeat;
+  background-size: 100%;
+  width: 124.5px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 1100px){
+    display: none;
+  }
+}
+
+.card__discount_birka{
+  background: url("../../assets/img/card/card_bg.png") 0 0 no-repeat;
+  width: 95.4px;
+  height: 24px;
+  position: static;
+  @media screen and (max-width: 1100px){
+    display: flex;
+  }
+  @media screen and (max-width: 705px){
+    display: none;
+  }
+}
+
+.card__discount-text {
+  font-family: Roboto;
+  font-size: 42px;
+  color: $medium-violet-red;
+
+  @media screen and (max-width: 1100px){
+    display: none;
+  }
+}
+
+.card__discount-text_birka{
+  font-size: 13px;
+  color: #18a1ad;
+
+  @media screen and (max-width: 1100px){
+    display: block;
+  }
+  @media screen and (max-width: 705px){
+    display: none;
+  }
+}
+
+fieldset, label { margin: 0; padding: 0; }
+
+.raiting__stars {
+  border: none;
+  float: left;
+}
+
+.raiting__stars > input { display: none; }
+.raiting__stars > label:before {
+  margin-right: 5px;
+  position: relative;
+  font-family: 'rocket' !important;
+  display: inline-block;
+  content: "\e911";
+}
+
+.raiting__stars > label {
+  cursor: pointer;
+  color: #ddd;
+  float: right;
+}
+
+.raiting__stars > input:checked ~ label,
+.raiting__stars:not(:checked) > label:hover,
+.raiting__stars:not(:checked) > label:hover ~ label {
+  color: $medium-violet-red
+}
+
+.raiting__stars > input:checked + label:hover,
+.raiting__stars > input:checked ~ label:hover,
+.raiting__stars > label:hover ~ input:checked ~ label,
+.raiting__stars > input:checked ~ label:hover ~ label {
+  color: #e05185
+}
+
+
+
+
+
+
+

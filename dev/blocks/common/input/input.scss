@@ -1,0 +1,62 @@
+.input{
+  position: relative;
+
+  .input__main{
+    font-size: 14px;
+    font-family: RobotoRegular;
+    border: 1px solid $gainsboro;
+    border-radius: 2px;
+    padding: 12px 15px;
+    color: #000000;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid #e00985;
+    }
+
+    &:focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      opacity: 0.5;
+    }
+
+    &:focus, &:active, &:hover {
+      outline: none;
+    }
+
+    &_text {
+      margin-top: 3px;
+    }
+
+    &_big {
+      font-size: 17px;
+      line-height: 20px;
+      padding: 13px 17px;
+    }
+  }
+
+  .input__label {
+    font-family: RobotoRegular;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+
+    &_gray {
+      font-size: 12px;
+      color: $grey;
+    }
+  }
+
+  .input__help {
+    position: absolute;
+    right: 0;
+    top: 3px;
+  }
+}
+
+.form-control {
+  margin-bottom: 14px;
+}

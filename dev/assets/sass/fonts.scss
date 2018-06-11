@@ -1,0 +1,140 @@
+@font-face {
+  font-family: RobotoLight;
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf")
+}
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url("../../assets/fonts/Roboto/Roboto-Medium.ttf")
+}
+
+@font-face {
+  font-family: RobotoBlack;
+  src: url("../../assets/fonts/Roboto/Roboto-Black.ttf")
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf")
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf")
+}
+
+@font-face {
+  font-family: 'rocket';
+  src:  url('../../assets/fonts/rocket/rocket.eot?h5x884');
+  src:  url('../../assets/fonts/rocket/rocket.eot?h5x884#iefix') format('embedded-opentype'),
+  url('../../assets/fonts/rocket/rocket.ttf?h5x884') format('truetype'),
+  url('../../assets/fonts/rocket/rocket.woff?h5x884') format('woff'),
+  url('../../assets/fonts/rocket/rocket.svg?h5x884#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'divider';
+  src: url("../../assets/fonts/divider/divider.ttf");
+}
+
+[class^="rocket-"], [class*=" rocket-"] {
+  font-family: 'rocket' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.rocket-close-1:before {
+  content: "\e913";
+}
+.rocket-close-2:before {
+  content: "\e914";
+}
+.rocket-close-3:before {
+  content: "\e915";
+}
+.rocket-close-4:before {
+  content: "\e916";
+}
+.rocket-half-star:before {
+  content: "\e912";
+}
+.rocket-star:before {
+  content: "\e911";
+}
+.rocket-vk:before {
+  content: "\e90f";
+}
+
+.rocket-pause-button:before {
+  content: "\e90e";
+}
+
+.rocket-play-button:before {
+  content: "\e906";
+}
+
+.rocket-heart:before {
+  content: "\e907";
+}
+
+.rocket-user:before {
+  content: "\e908";
+}
+
+.rocket-cash:before {
+  content: "\e909";
+}
+
+.rocket-card:before {
+  content: "\e90a";
+}
+
+.rocket-delivery:before {
+  content: "\e90b";
+}
+
+.rocket-pickup:before {
+  content: "\e90c";
+}
+
+.rocket-cross:before {
+  content: "\e90d";
+}
+
+.rocket-down-angle:before {
+  content: "\e905";
+}
+
+.rocket-fb:before {
+  content: "\e900";
+}
+
+.rocket-insta:before {
+  content: "\e901";
+}
+
+.rocket-twitter:before {
+  content: "\e902";
+}
+
+.rocket-gift:before {
+  content: "\e910";
+}
+
+.rocket-shop-bag:before {
+  content: "\e903";
+}
+
+.rocket-shop-bag_plus:before {
+  content: "\e904";
+}

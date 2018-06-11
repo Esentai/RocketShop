@@ -1,0 +1,21 @@
+.new__items{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, auto);
+}
+.new__item_first{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  position: relative;
+}
+
+.new__item_desc {
+  font-family: RobotoRegular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.new__item_desc-big {
+  line-height: 22px;
+}
+

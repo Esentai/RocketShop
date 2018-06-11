@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    @@include('blocks/page/header/header.html')
+    <div class="page">
+        <div class="page__content">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb__list"><a class="breadcrumb__link" href="#">Макияж</a></li>
+                    <li class="breadcrumb__list"><a class="breadcrumb__link" href="#">Декоративная косметика</a></li>
+                    <li class="breadcrumb__list">Помады</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    @@include('blocks/page/card/card.html')
+    @@include('blocks/page/alsobuy/alsobuy.html')
+    @@include('blocks/page/view/view.html')
+    @@include('blocks/page/like/like.html')
+    @@include("blocks/page/subscribe/sub.html")
+    @@include("blocks/page/footer/footer.html")
+    <script src="assets/js/price/price.js"></script>
+    <script src="assets/js/card/card.js"></script>
+    <script src="assets/js/header/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.cancel_order{
+  margin-bottom: 109px;
+  margin-top: 32px;
+  position: relative;
+  padding-top: 32px;
+  margin-left: 16%;
+}
+
+.cancel_order__like_icon{
+  position: absolute;
+  left: -80px;
+  top: -9px;
+}
+
+.cancel_order__form{
+  width: 385px;
+}
+
+.cancel_order__title_text{
+  font-family: RobotoRegular;
+  font-size: 44px;
+  text-align: left;
+  color: #000000;
+  display: block;
+}
+
+.cancel_order__desc_text{
+  margin-top: 10px;
+  font-family: RobotoRegular;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  display: block;
+  max-width: 621px;
+}
+
+.cancel_order__track_text{
+  margin-top: 10px;
+  font-family: RobotoRegular;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  display: block;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.cancel_order__form_input_email{
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #c8c8c8;
+  display: block;
+  outline:none;
+}
+
+.cancel_order__form_button{
+  margin-top: 15px;
+}

@@ -1,0 +1,111 @@
+<header class="header">
+    <div class="header__top page">
+        <div class="page__content">
+            <div class="header__main-nav">
+                <ul class="list-inline">
+                    <li class="list-inline__item">
+                        <select class="list-inline__select">
+                            <option value="" class="list-inline__item">Алматы</option>
+                            <option value="" class="list-inline__item">Астана</option>
+                            <option value="" class="list-inline__item">Тараз</option>
+                            <option value="" class="list-inline__item">Чимкент</option>
+                        </select>
+                    </li>
+                    <li class="list-inline__item"><a class="list-inline__link" href="#">Оплата и отправка</a></li>
+                    <li class="list-inline__item"><a class="list-inline__link" href="#">О возврате товара</a></li>
+                    <li class="list-inline__item">По любым вопросам: +7 727 237-98-53 и +7 707 237-98-54</li>
+                </ul>
+                <button class="button button_white button_small">Заказать звонок</button>
+                <a class="header__language" href="#">Қазақша</a>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="page-content">
+        <div class="header__main">
+            <div class="input header__main-input">
+                <input type="text" class="input__main" placeholder="Поиск">
+            </div>
+            <a href="/" class="header__logo">
+                <img class="header__logo_img" src="../../../assets/img/header/header-logo.png" alt="rocket-logo" width="280">
+            </a>
+            <ul class="header__list">
+                <li><a href="#" class="header__login">Войти</a></li>
+                <li>
+                    <button class="button button_white button_left-ico button_basket" onclick="basketDisplay()" id="basket_icon"><i class="rocket-shop-bag button__ico_medium button__ico_left-ico"></i>Корзина <div class="button__circle-text">3</div></button>
+                    @@include('../basket/basket.html')
+                </li>
+            </ul>
+        </div>
+        <div class="header__bottom">
+            <button class="header__dropdown-btn" onclick="dropdown(0)">
+                Парфюмерия<i class="rocket-down-angle header__arrow"></i>
+                <div  class="dropdown-content">
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                </div>
+            </button>
+            <button class="header__dropdown-btn" onclick="dropdown(1)">
+                Макияж<i class="rocket-down-angle header__arrow"></i>
+                <div class="dropdown-content">
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                </div>
+            </button>
+
+            <button class="header__dropdown-btn" onclick="dropdown(2)">
+                Уход за кожей<i class="rocket-down-angle header__arrow"></i>
+                <div class="dropdown-content">
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                </div>
+            </button>
+            <button class="header__dropdown-btn" onclick="dropdown(3)">
+                Мужчинам<i class="rocket-down-angle header__arrow"></i>
+                <div class="dropdown-content">
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                </div>
+            </button>
+
+            <button class="header__dropdown-btn" onclick="dropdown(4)">
+                Подарки<i class="rocket-down-angle header__arrow"></i>
+                <div class="dropdown-content">
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                </div>
+            </button>
+            <button class="header__dropdown-btn" onclick="dropdown(5)">
+                Аксессуары<i class="rocket-down-angle header__arrow"></i>
+                <div class="dropdown-content">
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                </div>
+            </button>
+            <button class="header__dropdown-btn" onclick="dropdown(6)">
+                Акции<i class="rocket-down-angle header__arrow"></i>
+                <div class="dropdown-content">
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                </div>
+            </button>
+            <button class="header__dropdown-btn" onclick="dropdown(7)">
+                Бренды<i class="rocket-down-angle header__arrow"></i>
+                <div class="dropdown-content">
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                    <a class="header__dropdown-link" href="#">Парфюмерия</a>
+                </div>
+            </button>
+        </div>
+        </div>
+    </div>
+    <script  src="assets/js/basket/basket.js"></script>
+</header>

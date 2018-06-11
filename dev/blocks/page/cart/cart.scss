@@ -1,0 +1,31 @@
+.cart {
+  margin-top: 35px;
+}
+
+.cart__container {
+  padding-bottom: 80px;
+}
+
+.cart__heading {
+  font-family: RobotoRegular;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+@media (max-width: 905px){
+  .cart-content__img {
+    display: none;
+  }
+}
+
+@media (max-width: 734px) {
+  .cart-content__price{
+    display: none;
+  }
+}

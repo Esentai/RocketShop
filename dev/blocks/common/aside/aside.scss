@@ -1,0 +1,103 @@
+.aside{
+  border-left: 1px solid #e6e6e6;
+  padding-left: 30px;
+
+  &__input {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+
+    &_promo {
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+
+    &_red {
+      &:focus {
+        outline: none !important;
+        border: 1px solid #e00985;
+      }
+    }
+  }
+}
+
+.aside_cart {
+  height: 98.8%;
+}
+
+.aside__title{
+  font-family: RobotoMedium;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.aside__promo{
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__promo_title{
+  font-family: RobotoRegular;
+  font-size: 14px;
+}
+
+.bill__items, .bill__delivery{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dfe1e4;
+}
+.bill__items_text, .bill__items_value, .bill__delivery_text, .bill__delivery_value{
+  font-family: RobotoRegular;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.aside__cost {
+  margin-top: 20.5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.aside__cost-text {
+  font-family: RobotoRegular;
+  font-size: 17px;
+}
+
+.aside__total-price{
+  font-family: RobotoBold;
+  color: #e00985;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.aside__total_value{
+  font-family: RobotoBold;
+  color: #e00985;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.aside__total{
+  margin-top: 20.5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.aside__total_text{
+  font-family: RobotoRegular;
+  font-size: 14px;
+}
+
+.aside__total_value{
+  font-family: RobotoRegular;
+  color: #e00985;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+
